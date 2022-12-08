@@ -314,5 +314,33 @@
     display: none;
   }
 }
+.collaborators {
+  margin-top: 140px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.collaborators h1 {
+  max-width: 482px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  color: #080829;
+}
+.collaborators-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+@media screen and (max-width: 920px) {
+  .collaborators {
+    padding: 0 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
