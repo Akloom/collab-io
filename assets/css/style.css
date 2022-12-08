@@ -30,6 +30,7 @@
   position: sticky;
   top: 0;
   border-bottom: 1px solid #CECED4;
+  background: #FFFFFF;
 }
 .header-content {
   padding: 20px 0;
@@ -199,6 +200,7 @@
   .header-buttons {
     margin-left: 0;
     margin-top: 40px;
+    flex-direction: column;
   }
   .hamburger-menu {
     display: block;
@@ -230,6 +232,86 @@
   }
   .header-nav a {
     text-align: center;
+  }
+}
+.banner {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+}
+.banner-content h1 {
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 79px;
+  color: #222222;
+}
+.banner-content p {
+  margin-top: 20px;
+  max-width: 495px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #222222;
+}
+.banner-content__btn {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.banner-content__btn a {
+  padding: 16px 36px;
+  border: 1px solid #3F53D8;
+  border-radius: 14px;
+  background: #3F53D8;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  transition: 0.6s all;
+}
+.banner-content__btn a:hover {
+  background: #FFFFFF;
+  color: #3F53D8;
+}
+.banner-content__btn-image {
+  max-width: 181px;
+}
+.banner-content__btn-image img {
+  width: 100%;
+}
+.banner-image {
+  max-width: 600px;
+}
+.banner-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    margin-top: 20px;
+    padding: 0 20px;
+    gap: 50px;
+  }
+  .banner-content h1 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .banner-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .banner-content__btn-image {
+    display: none;
   }
 }
 
